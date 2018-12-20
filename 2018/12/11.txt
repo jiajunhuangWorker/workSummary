@@ -1,0 +1,1 @@
+1.Object.assign兼容问题(ie10存在问题)
