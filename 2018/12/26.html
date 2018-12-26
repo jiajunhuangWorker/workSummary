@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20181226</title>
+	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
+</head>
+<body>
+	<dl>
+		<dt>1.layui的table如果数据少的时候table内容不会出现滚动条,当进行表格缩放的时候会导致不能自适应</dt>
+		<dd>1.解决方法1.就是给表格进行calc 计算好滚动条的宽度，给表头进行width100%,弊端,当屏幕小的时候position:flex会出现问题</dd>
+			
+		<dt>2.table.js 点击编辑但是没反应,table被禁用</dt>
+		<dd>解决:layui自带的table.js if(othis).data('off') return 导致不出发事件</dd>
+
+		<dt>3.屏幕大小缩放问题,当屏幕点击某个按钮,主画布进行了宽度变化,需要注意控件的自适应问题</dt>
+		
+	</dl>
+</body>
+<script>
+	var arr=[1,2,3,4,5,6];
+	var num=null;
+	for(i in arr){
+		if(typeof arr[i] === 'function') continue;
+		if(i==3){
+			num=i;
+			break;
+		}
+	}
+	console.log(num)
+</script>
+</html>
