@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20190116</title>
+	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
+</head>
+<body>	
+	<dl>
+		<dt>数据库</dt>
+		<dd>先看缺什么字段然后自己找到对应的表去加字段</dd>
+		<dd>连接数据库是以库为单元的,因此直接查看*-web-dev/resources/查看*.yml配置文件去几链接本地数据库</dd>
+		<dt>webpack使用时遇到问题</dt>
+		<dd>1.important 导入node_module里面的包,</dd>
+		
+		<dt>js的克隆思路</dt>
+		<dd>clone首先需要看入参,如果入参是数组的话就要新建一个空数组然后利用for in循环去push 数据,如果是对象的话就键值对去处理</dd>
+		
+		<dt>防止用户频点思路</dt>
+		<dd>当用户频点的时候需要在点击事件进行处理,在全局先定一个初始值默认为0当点击之后判断当前点击事件是否为0如果是为0进入方法然后修改全局的属性为非0的值然后再添加一个setTimeOut去修改那个全局属性值</dd>
+
+		<dt>今天的坑</dt>
+		<dd>layer.js中今天存遇到一个问题就是因为layout引起的解决办法就是找到创建阴影层的地方修改他点击的位置然后再body添加active,然后他就能全屏显示了,当按关闭,确认,等按钮的时候就立即remove body里面的类名active</dd>
+	</dl>
+</body>
+</html>
