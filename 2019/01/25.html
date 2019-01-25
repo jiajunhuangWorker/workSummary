@@ -7,8 +7,31 @@
 </head>
 <body>		
 	<dl>
-		<dt></dt>
-		<dd></dd>
+		<dt>knockout</dt>
+		<dd>with:object是专门针对显示某一个对象的信息的,和ko.observable()打配合</dd>
+		<dd>数据进行发生改变还是需要用jquery进行配合</dd>
+		<dt>$root</dt>
+		<dd>返回跟节点,一般在html使用</dd>
+		<dt>$parents[1]</dt>
+		<dd>返回上一级,一般在html使用</dd>
+		<dt>ko双数据绑定</dt>
+		<dd>
+			<div class="layui-input-block" data-bind='foreach:tb()'>
+	            <p class="type">类别:<span data-bind='text:group'></span></p> 
+	            <div class="layui-row icon" data-bind='foreach:{data:arr,as:"item"}'>   
+	                <div class="layui-col-xs3" data-bind="attr:{class:$parents[1].iconfont===item.iconUrl?'active layui-col-xs3':' layui-col-xs3'}">
+	                    <i  data-bind='attr:{class:item.iconUrl}'></i>
+	                    <p><span data-bind='text:item.txt,attr:{title:item.txt}'></span></p>
+	                </div>
+	            </div>
+	        </div>
+		</dd>
+		<dt>event:{行为}</dt>
+		<dt>style:{},attr:{}</dt>
+
+		<dt>80端口被占用修改方法</dt>
+		<dd>http://www.xitongcheng.com/jiaocheng/win7_article_32769.html</dd>
+		<dd>netstat -aon|findstr "80" 查看端口有没被占用</dd>
 	</dl>
 </body>
 </html>

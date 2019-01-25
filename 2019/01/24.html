@@ -2,63 +2,55 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>20190122</title>
+	<title>20190124</title>
 	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
 </head>
 <body>	
 	<dl>
-		<dt>pathOne:CMMI</dt>
-		<dd>评估企业的软件开发能力,提高企业声誉,检查企业研发流程状况</dd>
-		<dd>SW-CMM v1.0 1991</dd>
-		<dd>软件采购,系统工程,集成产品开发,人力资源</dd>
-		<dd>1997集成CMMI</dd>
-		<dd>CMMI最新版本1.3</dd>
-		<dd>CMMI-DEV:开发模型</dd>
-		<dd>CMMI-SVC:服务模型</dd>
-		<dd>CMMI-ACQ:采购模型</dd>
-		<dd>CMMI2.0:不划分类型,类型整合(2018/06),公用库然后通过个体去抽取自己需要的库</dd>
-
-		<dt>CMMI语言</dt>
-		<dd>中国使用率高</dd>
-		<dt>CMMI等级</dt>
-		<dd>CMMI 1级</dd>
-		<dd>CMMI 2级(REQM,PP,PMC,SAM)</dd>
-		<dd>CMMI 3级(IPM,RSKM,规范型)</dd>
-		<dd>3,2级规范性问题</dd>
-		<dd>CMMI 4级(QPM)</dd>
-		<dd>CMMI 5级(CAR)</dd>
-		<dd>4,5级大数据的分析通过大数据决策信息</dd>
-
-		<dt>pathTwo:CMMI-DEV</dt>		
-		<dd>细分模块:
-		<dd>过程类(组织过程聚焦-定义-培训-性能-管理)</dd>
-		<dd>项目管理类(需求管理-项目策划-监督和控制-协定管理-风险管理-集成项目管理-定量项目管理)</dd>
-		<dd>工程类(需求开发-技术解决-产品集成-验证-确认)</dd>
-		<dd>支持类(配置管理-过程和产品执行保证-测量和分析=决策分析和决定-原因分析和解决方案)</dd>
-
-		<dt>DEV成熟度级别</dt>
-
-		<dt>pathThree:CMMI实施</dt>
-		<dd>项目策划阶段(1月)</dd>
-		<dd>流程优化阶段(2.5月)</dd>
-		<dd>体系实施阶段(3.5月)</dd>
-		<dd>评估阶段<代码,开发文档,项目流程等>(1月)</dd>
+		<dt>谷歌快捷键</dt>
+		<dd>ctrl+shift+r 刷新界面</dd>
+		<dd>ctrl+shift+c指向某个节点能够看到相对应的dom结构,快速调起开发者模式</dd>
 		
-		<dt>pathFour:角色分配</dt>
-		<dd>1.过程改进小组(EPG<项目,开发,测试,中层,qa去进行组成,考虑方面广泛>)</dd>
-		<dd>2.质量保证足(QAG<检测定立的规则>)</dd>
-		<dd>3.项目组<流程调整等></dd>
-		<dd>4.培训(HR)</dd>
-		<dd>项目策划->流程优化(1.)->体系实施(2.)->3级评估</dd>
-		
-		<dt>pathFive:</dt>
-		<dd>瀑布模式,敏捷模式</dd>
-		<dd>CMMI(定立规则,风险管理,多开会)和敏捷的整合(怎么做开发,风险管理)</dd>
-		<dd>瀑布模式?</dd>
-		<dd>有信息未被覆盖或者发现了问题，那么最好 “返回”上一个阶段并进行适当的修改，项目开发进程从一个阶段“流动”到下一个阶段，这也是瀑布模型名称的由来</dd>
-	</dl>
-	<dl>
-		<dt></dt>
+		<dt>颜色转码</dt>
+		<dd>
+			var rgb = event.path[1].style.background.split(',');
+				    var r = parseInt(rgb[0].split('(')[1]);
+	    			var g = parseInt(rgb[1]);
+	    			var b = parseInt(rgb[2].split(')')[0]);
+	    			var hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); 
+		</dd>
+
+		<dt>点击区域问题</dt>
+		<dd>鼠标点击mousedown,event.button通过0,1,2去区分鼠标的左中右键位</dd>
+
+		<dt>鼠标右键禁止菜单栏显示</dt>
+		<dd>if (document.layers)
+			{
+			 document.captureEvents(Event.MOUSEDOWN);
+			}
+			document.onmousedown = click;
+			document.oncontextmenu = new Function("return false;")
+			function click(e){
+			   e = e || event;
+			   if (e.button == 2)
+			 {
+			     var tag = e.srcElement || e.target;
+			    if (tag.type == "text" || tag.type == "textarea")
+			     {
+			         document.oncontextmenu = new Function("return true;")
+			      }
+			       else
+			       {
+			       document.oncontextmenu = new Function("return false;")
+			       }
+			   }
+			}</dd>
+
+		<dt>事件</dt>
+		<dd>
+			event.stopPropagation();    //  阻止事件冒泡	
+    		event.preventDefault();//默认事件
+    	</dd>
 	</dl>
 </body>
 </html>

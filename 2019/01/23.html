@@ -7,8 +7,14 @@
 </head>
 <body>	
 	<dl>
-		<dt></dt>
-		<dd></dd>
+		<dt>工作思路</dt>
+		<dd>main.js引入gridstackjs首先要明白gridstackjs是dept什么js包的要明白关系之后发现gridstack.jQueryUI需要依赖他的下组件,下一步利用map去将jquery.ui都声明一遍每一个需要依赖的小组件
+		</dd>
+		<dd>在研究学习gridstackjs的时候先去npm查找最新的js包然后通过npm download 最新的gridstackjs然后根据api敲出第一个demo,gridstackjs的demo没有很好的案例option是相对简单,从中遇到一个坑,初始化的时候锁定布局和拖拽布局,我对api不够熟悉引起的,开始的解决方案是主布局z-index:-1通过类名来进行锁定/解锁操作
+		</dd>
+		<dd>
+			knockout比较弱化的一点是双向数据绑定,它是注重渲染显示数据的解决方法是利用push,unshift,shift,pop,remove
+		</dd>		
 	</dl>
 </body>
 </html>
