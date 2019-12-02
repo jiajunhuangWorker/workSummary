@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<dl>
+		<dt>双向数据绑定</dt>
+		<dd>self.variable = ko.observable({varibleName: '', whereExpr: '', variableType: '', quotaId: '', quotaName: '', dateDimId: '', statsFreq: '',fquotaVal:'',fquotaId:''});
+	var old = self.variable();
+		old.fquotaVal = obj.data.quotaName;
+		self.variable(null);
+		self.variable(old); (这种方式会影响到layui)</dd>
+		<dt>with</dt>
+		<dd>数据的层级关系</dd>
+		<dt>定义坑爹规则</dt>
+		<dd>
+			1.用户点击按钮时操作,添加时添加操作记录到数组,然后组装的数据是要存在下标值
+			2.组装的数据要全英文显示+全中文显示
+			3.用户心情不爽怎么删除已经写好的规则,通过下标来删除
+			4.写好的规则心情好了,用户保存起来
+			5.提交给后台后台在二次校验
+		</dd>
+
+		<dt>元素影响法</dt>
+		<dd>js 生成出来的东西可能被其他空间影响到要逐步排查</dd>
+	</dl>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<dl>
+		<dt>原生属性的获取和设置</dt>
+		<dd>Attribute是属性的意思</dd>
+		<dd>attributes：获取一个属性作为对象</dd>
+		<dd>getAttribute：获取某一个属性的值</dd>
+		<dd>setAttribute：建立一个属性，并同时给属性捆绑一个值</dd>
+		<dd>createAttribute：仅建立一个属性</dd><dd>removeAttribute：删除一个属性</dd>
+		<dd>getAttributeNode：获取一个节点作为对象</dd>
+		<dd>setAttributeNode：建立一个节点</dd>
+		<dd>removeAttributeNode：删除一个节点</dd>
+	</dl>
+</body>
+</html>
+<script>
+var d = document.getElementById("sss").attributes["value"];
+document.write(d.name);
+document.write(d.value);
+//显示value aaa
+</script>
