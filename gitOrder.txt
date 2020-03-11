@@ -2,6 +2,7 @@ download 项目
 git clone URL
 
 commit 项目
+git add. (新文件添加起来)
 git commit -m '注释'
 
 push 项目
