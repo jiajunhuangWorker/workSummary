@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<dl>
+		<dt>快捷键记录</dt>
+		<dd>1.ctrl+shift+p --- 命令模式(首先ctrl+n新建一个文件然后输入ctrl+shift+p在弹出框输入文件类型的) ---复制当前行的文本</dd>
+
+		<dd>2.ctrl+D ---选择单词（选中了单词之后）ctrl+f --- 将聚焦到单词上然后通过回车键进行选择下一个相同的单词 --- 逐个显示游标  (首先选中需要修改的单词然后ctrl+D他将会选中相同游标的单词,因为是逐个选择所以需要ctrl+D去进行选择匹配) ctrl+k ---跳过当前游标选择下个游标</dd>
+
+		<dd>3.ctrl+k ctrl+b --- 侧边栏的目录路径隐藏和显示</dd>
+
+		<dd>4.ctrl+p --- (:行数  将跳转到某一行)(文件名称  查找到具体的文件)(具体路径  查找到具体的文件)(@ 在css中在ctrl+p的情况下输入@能快速看到所有的选择器)(#选择器 将调到具体的标签)</dd>
+
+		<dd>5.preferences 是个性化的定制 </dd>
+
+		<dd>6.ctrl+H --- 将目标单词和修改的单词都进行统一修改</dd>
+
+		<dd>7.alt+F3 --- 同时选择多行游标 （放在单词位置然后进行alt+f3然后进行同时选中多个相同游标）</dd>
+
+		<dd>8.shift+鼠标右键拖动 --- 选择多行游标</dd>
+
+		<dd>9.alt+. ---闭合标签</dd>
+
+		<dd>10.ctrl+E --- 快速生成html基础结构<需要安装Emmet></dd>
+
+		<dd>11.ctrl+回车键 --- 在当前的选择器下方获取下一行(ctrl+p > #选择器 > ctrl+回车)</dd>
+
+		<dd>12.ctrl+} --- 首先选择代码然后ctrl+}进行增加缩进</dd>
+
+		<dd>13.ctrl+{ --- 首先选择代码然后ctrl+{进行减少缩进</dd>
+
+		<dd>14.ctrl+shift+d --- 复制当前行</dd>
+		
+		<dd>15.ctrl+shift+回车键 --- 返回上一行然后进行编辑</dd>
+
+		<dd>16.ctrl+shift+v --- 当在其他文件拷贝到了代码的时候为了保持代码缩进情况所以ctrl+shift+v</dd>
+
+		<dd>17.ctrl+tab --- 切换当前打开的窗口</dd>
+
+		<dd>18.ctrl+~ --- 命令行</dd>
+		<dd>19.plain text  ctrl+shift+p 进入弹窗然后输入 set html</dd>
+	</dl>
+	<dl>
+		<dt>插件篇</dt>
+		<dd>1.Emmet 插件</dd>
+
+	</dl>
+	<dl>
+		<dt>代码生成篇</dt>
+		<dd>1.ul>.item$*10  生成10个li 带class的</dd>
+		
+		<dd>2.选择器{文本} --- ctrl+e 进行多行操作</dd>
+		
+	</dl>
+	<dl>
+		<dt>插件安装</dt>
+		<dt>packagcontrol管理插件</dt>
+		<dd>1.先去官网下载packagcontrol 然后通过ctrl+shift+p 查找packagcontrol 通过里面的选项看自己需要什么东西</dd>
+		<dt>2.snippets模板的方式编程</dt>
+		<dd>主要是用来做快捷键</dd>
+		<dt>insert callback</dt>
+		<dd>自动添加分号</dd>
+		<dt>辅助技巧 advanceNewfile</dt>
+		<dd>这个工具主要是针对创建文件 安装了插件后然后<ctrl+alt+n>新建文件 （打具体路径创建具体的路径进行路径的存储）</dd>
+		<dt>Http Requester</dt>
+		<dd>
+			<!-- localhost:3333/user/ --> 
+			选中网址然后按alt+ctrl+R			
+		</dd>
+		<dt>DotNetNuke Snippets</dt>
+		<dd>类库管理下载类库</dd>
+		<dt>SideBarEnhancements</dt>
+		<dd>方便将page展示到浏览器，首先需要在侧边栏查找到自己要打开的html文件然后再按鼠标右键就能看到增强后的东西</dd>
+		<dt>DocBlockr</dt>
+		<dd>快速添加注释   
+		在js文件 先写方法在写/* +tab键
+		/**
+		 * @param  {[type]}
+		 * @param  {[type]}
+		 * @return {[type]}
+		 */
+		function a(a,b){
+			return a;
+		}
+		</dd>
+		<dt>sublimeLinter</dt>
+		<dd>使用lint进行语法及风险校验</dd>
+		<dt>sublimeLinter-jshint</dt>
+		<dd>还要再npm install -g jshint</dd>
+		
+		<dt>localization</dt>
+		<dd>汉化包</dd>
+
+		<dt>sass</dt>
+		<dd>01.https://www.w3cplus.com/sassguide/install.html(安装ruby) --02.安装Package Control ---03.安装sass和sass build ----04.建sass文件然后通过ctrl+B进行编译</dd>
+	</dl>
+</body>
+</html>

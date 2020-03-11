@@ -1,0 +1,9 @@
+download 项目
+git clone URL
+
+commit 项目
+git commit -m '注释'
+
+push 项目
+git push origin master
+
