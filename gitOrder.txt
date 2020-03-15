@@ -1,4 +1,4 @@
-download 项目
+﻿download 项目
 git clone URL
 
 commit 项目
@@ -10,4 +10,11 @@ git push origin master
 
 删除本地仓库
 find . -name ".git" | xargs rm -Rf
+
+
+查看当前的目录文件
+ls 
+
+进入盘符
+cd 盘符:
 
