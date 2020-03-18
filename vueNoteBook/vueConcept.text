@@ -1,27 +1,25 @@
 ﻿createTime:20190524
-做测试
 author:lucas
 studayPlace:慕课网
 versions:Vue2.0
 
 目录
 	1.vue特点
-	2.vue实例对象奥术大师
+	2.vue实例对象
 	3.生命周期
 	4.脚手架
-	5.vue基本概念所处的分散
-	2016.10发布2.0版本
-大萨达撒多
+	5.vue基本概念
+	vue2.0发布:2016.10发布2.0版本
+
 1.vue特点:
 	vue.js(轻量级,高效率,上手快,简单易学,全面简洁的api)
-
 
 	双向绑定(因为dom的操作过于频繁所以拥有双向数据绑定很好,js值发生改变html绑定的数据也同时改变)
 
 	组件化/模块化
 	单文件组件(js,css,html都存于同一个文件内,功能样式模板都放在一起)
-	维护好维护,js,css,html都写在一起
-	scoped 属性可以限制 style的作用域防止污染到其他的地方(单文件组件提供)
+	好维护,js,css,html都写在一起
+	style的scoped属性可以限制 style的作用域防止污染到其他的地方(vue单文件组件提供)
 	预处理器(lang="less"写到标签上然后进行限制)
 
 1.1打包工具
@@ -33,19 +31,16 @@ versions:Vue2.0
 
 2.vue实例对象
 	全局构造函数
-	 new Vue(构造函数)（{
-		el(挂载点)：'#app',
+	new Vue(构造函数)（{
+		el(挂载节点)：'#app',
 		template(模板):'< div>{{message}}</div>'
-		data(构造参数):{
+		data(入参构造参数):{
 			message(参数选项):'hello,vue'
 		}
-	}）
-	最基本的一个单元
-
-	引入注册组件
-	components:{template Name}
+	})
 
 3.生命周期
+	https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA
 	在不同的阶段有不同的钩子
 
 4.脚手架
@@ -65,3 +60,23 @@ versions:Vue2.0
 	5.3实例属性/方法($开头的)
 	5.4指令(v开头的)
 	5.5内置组件(component,keep-alive)
+
+
+零散知识
+1.组件化
+	全局注册
+		Vue.component({})
+	局部注册
+		components({})
+
+2.引用赋值问题
+	假设使用同一份data里面的属性值如果data里面的属性发生改变,那么所有的组件也会发生改变
+	解决方案:
+	data:function(){
+		retrun {
+			num:1,
+			num2:2
+		}
+	}
+
+3.keep-alive访问过的地址缓存起来
