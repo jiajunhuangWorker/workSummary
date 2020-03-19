@@ -1,4 +1,20 @@
+安装包基础
 https://blog.csdn.net/zrcj0706/article/details/79178371
 
-保存到dependencies
-cnpm install 插件名 --save
+vue 安装sass
+sass-loader 因为 vue-cli 原因要注意版本号
+node-sass
+
+webpakc.base.conf写入
+{
+   test: /\.sass$/,
+   loaders: ['style', 'css', 'sass']
+}
+
+style 写入
+lang='scss'
+
+vue-carousel 轮播图
+
+axios 安装  发送请求
+cnpm install axios --save
