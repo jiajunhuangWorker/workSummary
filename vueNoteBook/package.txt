@@ -1,4 +1,4 @@
-安装包基础
+﻿安装包教程
 https://blog.csdn.net/zrcj0706/article/details/79178371
 
 vue 安装sass
@@ -14,7 +14,14 @@ webpakc.base.conf写入
 style 写入
 lang='scss'
 
-vue-carousel 轮播图
+
+vue 使用 轮播图
+vue-carousel 
+
+vue 使用 Mock.js(自定义数据)
+cnpm install mockjs --save
+
 
 axios 安装  发送请求
 cnpm install axios --save
+
