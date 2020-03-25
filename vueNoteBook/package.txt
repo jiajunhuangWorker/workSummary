@@ -5,8 +5,7 @@ vue 安装sass
 sass-loader 因为 vue-cli 原因要注意版本号
 node-sass
 
-webpakc.base.conf写入
-{
+webpakc.base.conf写
    test: /\.sass$/,
    loaders: ['style', 'css', 'sass']
 }
