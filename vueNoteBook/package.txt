@@ -15,7 +15,7 @@ lang='scss'
 
 
 vue 使用 轮播图
-vue-carousel 
+vue-carousel
 
 vue 使用 Mock.js(自定义数据)
 cnpm install mockjs --save
@@ -24,3 +24,15 @@ cnpm install mockjs --save
 axios 安装  发送请求
 cnpm install axios --save
 
+
+
+找组件
+awesome-vue
+
+移动端 点击事件300ms问题解决
+cnpm install fastclick --save
+
+vue 安装 styles
+cnpm install styles --save
+vue 安装 stylus-loader 
+cnpm install stylus-loader --save

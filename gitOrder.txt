@@ -13,7 +13,7 @@ find . -name ".git" | xargs rm -Rf
 
 
 查看当前的目录文件
-ls 
+ls
 
 进入盘符
 cd 盘符:
@@ -76,3 +76,14 @@ cd 盘符:
 创建带注释的tag：$ git tag -a [name] -m 'yourMessage'
 
 
+访问inlix 的命令
+git bash
+
+清掉git的window
+clear
+
+查看当前项目所在的位置
+git status
+
+将npm 下载的package 使用淘宝映射
+npm config set -g registry https://registry.npm.taobao.org

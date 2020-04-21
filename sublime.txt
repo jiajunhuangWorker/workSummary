@@ -34,7 +34,7 @@
 		<dd>13.ctrl+{ --- 首先选择代码然后ctrl+{进行减少缩进</dd>
 
 		<dd>14.ctrl+shift+d --- 复制当前行</dd>
-		
+
 		<dd>15.ctrl+shift+回车键 --- 返回上一行然后进行编辑</dd>
 
 		<dd>16.ctrl+shift+v --- 当在其他文件拷贝到了代码的时候为了保持代码缩进情况所以ctrl+shift+v</dd>
@@ -52,9 +52,9 @@
 	<dl>
 		<dt>代码生成篇</dt>
 		<dd>1.ul>.item$*10  生成10个li 带class的</dd>
-		
+
 		<dd>2.选择器{文本} --- ctrl+e 进行多行操作</dd>
-		
+
 	</dl>
 	<dl>
 		<dt>插件安装</dt>
@@ -68,15 +68,15 @@
 		<dd>这个工具主要是针对创建文件 安装了插件后然后<ctrl+alt+n>新建文件 （打具体路径创建具体的路径进行路径的存储）</dd>
 		<dt>Http Requester</dt>
 		<dd>
-			<!-- localhost:3333/user/ --> 
-			选中网址然后按alt+ctrl+R			
+			<!-- localhost:3333/user/ -->
+			选中网址然后按alt+ctrl+R
 		</dd>
 		<dt>DotNetNuke Snippets</dt>
 		<dd>类库管理下载类库</dd>
 		<dt>SideBarEnhancements</dt>
 		<dd>方便将page展示到浏览器，首先需要在侧边栏查找到自己要打开的html文件然后再按鼠标右键就能看到增强后的东西</dd>
 		<dt>DocBlockr</dt>
-		<dd>快速添加注释   
+		<dd>快速添加注释
 		在js文件 先写方法在写/* +tab键
 		/**
 		 * @param  {[type]}
@@ -91,12 +91,15 @@
 		<dd>使用lint进行语法及风险校验</dd>
 		<dt>sublimeLinter-jshint</dt>
 		<dd>还要再npm install -g jshint</dd>
-		
+
 		<dt>localization</dt>
 		<dd>汉化包</dd>
 
 		<dt>sass</dt>
 		<dd>01.https://www.w3cplus.com/sassguide/install.html(安装ruby) --02.安装Package Control ---03.安装sass和sass build ----04.建sass文件然后通过ctrl+B进行编译</dd>
+
+		<dt>显示空格不显示点</dt>
+		<dd></dd>
 	</dl>
 </body>
 </html>
