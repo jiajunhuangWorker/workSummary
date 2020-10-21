@@ -101,5 +101,9 @@
 		<dt>显示空格不显示点</dt>
 		<dd></dd>
 	</dl>
+	<dl>
+		<dt>打开软件</dt>
+		<dd>打开查看分支软件: ctrl+shift+p   Sublime Merge:Open Repositry</dd>
+	</dl>
 </body>
 </html>

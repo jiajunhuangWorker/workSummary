@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript学习</title>
+	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
+</head>
+<body>
+	<dl>
+                <dt>1.Math对象</dt>
+                <dd>提供一系列与数学相关的成员</dd>
+                <dd>random产生一个0~1之间的随机数 伪随机数 根据时间戳+网卡编号生成</dd>
+                <dd>PI:圆周率(常量：永远不会变化的数字,如果多个单词用下划线去区分)</dd>
+                <dd>abs:求绝对值</dd>
+                <dd>floor:向下取整(如果为负数会往下取整)</dd>
+                <dd>ceil:向下取整</dd>
+                <dd>max:得到一组数字的最大值如果无参得到正无穷</dd>
+                <dd>min:得到一组数字的最小值如果无参得到负无穷</dd>
+                <dd>pow:求一个数字的幂次方  2**3</dd>
+                <dd>round:四舍五入 如果是负数他会拿到大的那个整数</dd>
+
+                <dt>2.Date构造函数</dt>
+                
+                <dd>1.时间单位</dd>
+                <dd>年(year)、月(month)、日(date)、时(hour)、分(minute)、秒(second 1000ms)、毫秒(millisecond 1000ms)、微妙(microsecond 1000us)、纳秒(nanosecond 1000ns)</dd>
+                
+                <dd>2.UTC和GMT</dd>
+                <dd>世界划分为24个时区,北京在东8区,格林威治在0时区</dd>
+                <dd>GMT格林威治世界时  太阳时</dd>
+                <dd>UTC:世界协调时 以原子时间为计时标准精确到纳秒</dd>
+
+                <dd>UTC和GMT之间误差不超过0.9秒</dd>
+                <dd>GM +0800 东8区</dd>
+
+                <dd>3.时间戳</dd>
+                <dd>数字 1970-1-1 凌晨 到某个时间锁经历过的毫秒数</dd>
+                <dd>第一代电脑 内存以kb去计算,利用时间戳去进行计算 32bit 数字 2的32次方 大概在68年后 大概是2039年后时间会出现问题</dd>
+                <dd>但是现在电脑64bit 就是2的64次方 1970+68的次方去进行计算</dd>
+
+                <dd>创建时间对象</dd>
+                <dd>直接调用函数不使用new ,忽略所有参数直接返回当前时间的字符串</dd>
+                <dd>new Date() 创建日期对象 获取到当前时间</dd>
+                <dd>1.无参:当前时间</dd>
+                <dd>2.1个参数,参数为数字,表示传入的是时间戳</dd>
+                <dd>3.两个参数以上,分别表示:年月日时分秒毫秒</dd>
+                <dd>注意:月份是按照0去代表一月</dd>
+                <dd>如果缺失参数,日期部分默认为1,时分秒毫秒默认为0</dd>
+                <dd>月,日,时，分,秒都为负数的时候会按照时间去进行递减</dd>
+
+                <dd>实例成员</dd>
+                
+                <dd>get</dd>
+                <dd>getDate():当前月的多少号</dd>
+                <dd>getUTCDate():格林威治的时间</dd>
+                <dd>getDay():星期 (0~6)</dd>
+                <dd>getFullYear():完整的年份</dd>
+                <dd>getHours():时</dd>
+                <dd>getMinutes():分</dd>
+                <dd>getSeconds():秒</dd>
+                <dd>getMilliseconds():毫秒</dd>
+                <dd>getTime():时间戳</dd>
+                <dd>getMonth:huo</dd>
+
+                <dd>set</dd>
+                <dd>setDate():设置日</dd>
+                <dd>setFullYear:设置年月日</dd>
+                <dd>setMinutes:分</dd>
+                <dd>setSeconds:秒</dd>
+                <dd>setTime:重新设置设置时间戳</dd>
+                <dd>setMilliseconds:设置毫秒</dd>
+                 
+                <dd>turn</dd>
+                <dd>toDateString:将日期部分转换为可读的字符串</dd>
+                <dd>toISOString:将整个对象转换为ISO标准的字符串格式</dd>
+                <dd>toLocaleDateString 根据当前系统的地区设置 将日期部分转换为可读的字符串</dd>
+                <dd>toLocaleString:根据当前系统的地区设置,将整个日期对象转换为可读的字符串</dd>
+                <dd>toLocaleTimeString:根据当前系统的地区设置,将时间部分转换为可读的字符串</dd>
+                <dd>toString:标准的时间</dd>
+
+                <dd>日期的运算 </dd>
+                <dd>valueOf 返回的是一个数字表示时间戳</dd>
+                <dd>日期对象可以进行数学运算</dd>
+                <dd>两个日期 字符串 相加是变成了字符串 相减将会调用valueOf 得到时间戳</dd>
+
+        </dl>
+</body>
+</html>
+<script>
+
+</script>

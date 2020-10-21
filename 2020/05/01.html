@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript学习</title>
+	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
+</head>
+<body>
+	<dl>
+		<dt>1.Object和Function</dt>
+		<dd>1.标准库 liberary</dd>
+        <dd>javscript -> object.js</dd>
+        
+        <dt>静态成员</dt>
+        <dd>keys(对象),得到对象的属性名的数组</dd>
+        <dd>values(对象),得到都对象的所有属性值的数组</dd>
+        <dd>entries(对象),得到对象所有属性名和属性值的数组</dd>
+
+        <dt>实例成员</dt>
+        <dd>toString:得到某个对象的字符串格式</dd>
+        <dd>toString可以被重写</dd>
+        <dd>valueOf方法:得到某个对象的值 默认情况下返回当前对象本身</dd>
+        <dd>在JS中当自动进行类型转换时,如果对一个对象进行类型转换时实际上先调用对象的valueof 方法然后在调用toString方法</dd>
+
+        <dt>function</dt>
+        <dd>所有函数都有function中的实例成员</dd>
+        <dd>arguments 是类数组也称为伪数组,伪数组缺少实例方法</dd>
+        <dd>arguments数组中的值会对形参进行对应</dd>
+        <dd>获取函数形参数量 functionName.length</dd>
+        <dd>Function方法:</dd>
+
+        <dt>function 中的apply</dt>
+        <dd>JavaScript -> call_apply</dd>
+        <dd>apply 改变this 的指向，call改变this指向</dd>
+        <dd>apply 入参 传递形参的时候 数组</dd>
+        <dd>call 入参 传递形参的时候 直接传参 </dd>
+        <dd>通常可以利用apply和call方法去将某个伪数组转为真数组</dd>
+	</dl>
+</body>
+</html>
+<script>
+
+</script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript学习</title>
+	<link rel="stylesheet" type="text/css" href="../../globalBase.css">
+</head>
+<body>
+	<dl>
+		<dt>1.Array构造器</dt>
+		<dd>凡是通过Array构造函数创建的对象,都是数组</dd>
+                
+                <dt>静态成员</dt>
+                <dd>Array.from方法:可以将一个伪数组转为真数组</dd>
+                <dd>Array.isArray方法: 判断一个对象是不是数组返回boolean</dd>
+                <dd>Array.of()方法:类似于中括号的写法</dd>
+                
+                <dt>实例成员</dt>
+                <dd>fill方法:填充数组</dd>
+                <dd>pop</dd>
+                <dd>push</dd>
+                <dd>reverse:将当前数组反转</dd>
+                <dd>shift</dd>
+                <dd>sort:对数组进行排序</dd>
+                <dd>splice</dd>
+                <dd>unshift</dd>
+                
+                <dd>原型链 方法</dd>
+                <dd>纯函数,无副作用函数:不会导致当前数组发生改变</dd>
+                <dd>concat:拼接数组</dd>
+                <dd>includes:数组中是否包含某个元素</dd>
+                <dd>join</dd>
+                <dd>slice</dd>
+                <dd>indexOf</dd>
+                <dd>lastindexOf</dd>
+                
+                <dd>迭代</dd>
+                <dd>forEach:遍历数组</dd>
+                <dd>every:是否所有元素都满足条件</dd>
+                <dd>some:只要有一个条件满足</dd>
+                <dd>filter:过滤</dd>
+                <dd>find:查找第一个满足条件的元素,返回元素本身,如果没有找到返回undefined</dd>
+                <dd>findIndex:查找第一个满足条件的元素,返回元素下标,不存在返回-1</dd>
+                <dd>map:映射,将数组的每一项映射成为另外一项</dd>
+                <dd>reduce:统计,累计</dd>
+
+                <dt>链式编程:每一个函数调用返回的类型一致就能使用链式编程</dt>
+
+
+                <dt>原始类型包装器</dt>
+                <dd>JavaScript -> variable.js</dd>
+                <dd>new 包装器(值):返回的是一个对象</dd>
+                <dd>包装器：返回的原始类型</dd>
+                <dd>Number</dd>
+                
+                <dd>静态方法:</dd>
+                <dd>isNaN</dd>
+                <dd>isFinite</dd>
+                <dd>isInteger:判断是不是整数</dd>
+                <dd>parseFloat:将一个数据转换为小数</dd>
+                <dd>parseInt:将一个数据转换为整数
+                可以入参第二个参数可以知道是什么进制
+                </dd>
+                <dd>parseFloat和parseInt要求参数是一个字符串,如果不是字符串,则会先转换为字符串.从字符串开始位置差进行查找,找到第一个有效数字进行转换,如果没有找到返回NAN,左右空白字符忽略</dd>
+                
+                <dd>实例方法:</dd>
+                <dd>toFixed():会四舍五入</dd>
+                <dd>toPrecision:以指定的精度返回数字字符串</dd>
+
+                <dd>Boolean</dd>
+                <dd>false,"",0,undefined,NaN,null</dd>
+
+                <dd>String</dd>
+                <dd>+,\去进行换行</dd>
+             
+                <dd>静态成员</dd>
+                <dd>fromCharCode:通过unicode编码创建字符串</dd>
+                <dd>fromCodePoint:将编码转为字符</dd>
+                
+                <dd>实例方法</dd>
+                <dd>字符串就是一个伪数组,也是叫做类数组</dd>
+                <dd>length</dd>
+                <dd>chartAt:得到指定位置的字符</dd>
+                <dd>charCodeAt:得到字符编码</dd>
+                <dd>concat:链接字符</dd>
+                <dd>includes:是否包含指定的字符串</dd>
+                <dd>endsWith:字符串最后的位置是不是有某些字符</dd>
+                <dd>startWith:字符串最前的位置是不是有某些字符</dd>
+                <dd>indexOf:下标</dd>
+                <dd>padEnd:末尾填充字符</dd>
+                <dd>panStart:开头填充字符/dd>
+                <dd>repeat:重复显示字符串</dd>
+                <dd>split:分割字符串</dd>
+                <dd>slice:从某个位置取到某个位置;位置可以是负数       开始坐标-不包含最好的坐标</dd>
+                <dd>substr:从某个位置开始取,取指定的长度;位置可以是负数  开始坐标-不包含最好的坐标</dd>
+                <dd>substring:从某个位置取到某个位置;不可以是负数 开始坐标-包含最后的坐标</dd>
+                <dd>toLowerCase:转换为小写</dd>
+                <dd>toUpperCase:转换为大写</dd>
+                <dd>trim:去掉首尾的空格</dd>
+                <dd>trimLeft:去掉左边的空格</dd>
+                <dd>trimRight:去掉右边的空格</dd>
+        </dl>
+</body>
+</html>
+<script>
+
+</script>
